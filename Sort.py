@@ -15,7 +15,7 @@ def sort(array):
     pivot = array[0]
 
     # ここから記述
-    # pivotの値が最小値である時無限ループになる場合があるため対処として1つずらす
+    # pivotの値が最小値である時、無限ループになる場合があるため対処として1つずらす
     if pivot == min(array):
         pivot = array[1]
 
