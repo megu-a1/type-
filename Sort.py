@@ -42,7 +42,7 @@ def sort(array):
             break
 
         # 先頭から検索しpivot以上の値が見つかったかつ末尾から検索しpivot未満の値が見つかった場合は
-        # それらを入れ替えそのあとの検索のために両者とも1つ進める
+        # それらを入れ替えた上で検索のために両者とも1つ進める
         elif (array[min_idx] >= pivot) and (array[high_idx] < pivot): 
             array[min_idx],array[high_idx] = array[high_idx],array[min_idx]
             min_idx+=1
